@@ -1,0 +1,413 @@
+body{
+  margin: 0;
+}
+.App{
+  display: grid;
+  width: 100vw;
+  height: fit-content;
+}
+header{
+  font-weight: 500;
+  color: hsl(0, 0%, 75%);
+  padding-top: 30px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+header .linksAndLogin{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+header .links{
+  display: flex;
+  gap: 40px;
+}
+.links span:hover{
+  cursor: pointer;
+  color: hsl(257, 27%, 26%);
+}
+header img{
+  height: 30px;
+  width: fit-content;
+  margin-left: 150px;
+}
+header .login{
+  margin-left: auto;
+  margin-right: 150px;
+  display: flex;
+  gap: 10px;
+}
+.login span{
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.login span:hover{
+  background-color: hsl(180, 66%, 49%);
+  color: white;
+}
+.getStarted{
+  margin-top: 20px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  margin-bottom: 150px;
+}
+.getStarted .info{
+  margin-left: 150px;
+  width: 40%;
+}
+.getStarted .info h3{
+  margin: 40px 0 0 0;
+  color: hsl(257, 27%, 26%);
+  font-size: 60px;
+  word-spacing: 8px;
+  line-height: 70px;
+}
+.getStarted .info p{
+  font-size: 18px;
+  font-weight: 500;
+  word-spacing: 8px;
+}
+.btn{
+  padding: 10px 30px;
+  border-radius: 30px;
+  background-color: hsl(180, 66%, 49%);
+  color: white;
+  font-weight: 900;
+  border: none;
+  height: fit-content;
+}
+.getStarted img{
+  height: 400px;
+  width: 55%;
+}
+.sticky{
+  z-index: 100;
+  position: sticky;
+  top: 10px;
+  border-radius: 10px;
+  width: 100vw;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  align-self: flex-end;
+  margin-bottom: -5%;
+}
+.msg{
+  position: absolute;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  width: 100vw;
+}
+.shorted{
+  background-color: white;
+  padding: 10px 30px;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70vw;
+  font-weight: 500;
+  border-radius: 10px;
+}
+.shorted .newLink{
+  color: hsl(180, 66%, 49%);
+}
+.shorted button{
+  margin-left: 20px;
+  background-color: hsl(180, 66%, 49%);
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  font-weight: 900;
+  color: white;
+  border-radius: 5px;
+}
+.shorted button:hover{
+  background-color: hsl(257, 27%, 26%);
+}
+.sticky  form{
+  padding: 40px 30px;
+  margin: 0 auto;
+  box-sizing: content;
+  gap: 2%;
+  background-image: url(./images/bg-shorten-desktop.svg);
+  background-color: hsl(257, 27%, 26%);
+  width: 70vw;
+  justify-items: center;
+  height: 50px;
+  display: grid;
+  border-radius: 10px;
+  align-items: center;
+  grid-template-columns: 85% 11%;
+}
+input{
+  height: 40px;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+form button{
+  height: 40px;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  box-sizing: content-box;
+}
+.advancedStats{
+  display: grid;
+  justify-items: center;
+  background-color: hsl(0, 0%, 75%);
+}
+.advancedStats .details{
+  margin: 150px 0 50px 0;
+  text-align: center;
+}
+.details h2{
+  color: hsl(257, 27%, 26%);
+  font-size: 25px;
+}
+.details p{
+  color: white;
+  font-size: 15px;
+  max-width: 500px;
+  width: fit-content;
+}
+.advancedStats .fancyComp{
+  display: flex;
+  gap: 30px;
+  margin: 50px 150px 100px 150px;
+  position: relative;
+}
+.fancyComp::after{
+  content: '';
+  width: 100%;
+  height: 20px;
+  background-color: hsl(180, 66%, 49%);
+  position: absolute;
+  top: 50%;
+}
+.fancyComp .comp{
+  height: fit-content;
+  z-index: 1;
+  width: 250px;
+  color: hsl(0, 0%, 75%);
+  background-color: white;
+  padding: 50px 15px 15px 15px;
+  border-radius: 10px;
+  position: relative;
+}
+.comp h3{
+  color: hsl(257, 27%, 26%);
+}
+.comp img{
+  position: absolute;
+  top: -30px;
+  background-color: hsl(257, 27%, 26%);
+  padding: 10px;
+  border-radius: 50%;
+}
+.overLay{
+  display: grid;
+}
+.two{
+  margin-top: 50px;
+}
+.three{
+  margin-top: 100px;
+}
+.tinyGetStarted{
+  display: grid;
+  width: 100vw;
+  height: 200px;
+  color: white;
+  background-image: url(./images/bg-boost-desktop.svg);
+  background-color: hsl(257, 27%, 26%);
+}
+.tinyGetStarted h3{
+  font-size: 30px;
+  text-align: center;
+}
+.tinyGetStarted button{
+  margin: 0 auto;
+}
+footer{
+  background-color: hsl(260, 8%, 14%);
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 50% 1fr;
+}
+footer>*{
+  margin: 30px 0 50px 0;
+}
+footer .footerDetail{
+  display: flex;
+  gap: 30px;
+}
+.footerDetail .detail{
+  display: grid;
+  color: hsl(0, 0%, 75%);
+}
+.detail h2{
+  color: white;
+  margin-top: 0;
+}
+.footerLogo{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  height: fit-content;
+}
+.click{
+  margin: 0 30px 0 0;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  display: none;
+}
+.click *{
+  width: 100%;
+  height: 2px;
+  background-color: black;
+}
+.add{
+  border: 1px solid;
+  border-color: hsl(0, 87%, 67%);
+  color: hsl(0, 87%, 67%);
+}
+.hide{
+  position: absolute;
+  bottom: 10px;
+  width: fit-content;
+  height: fit-content;
+  color: hsl(0, 87%, 67%);
+}
+@media (max-width: 800px) {
+  .click{
+    display: flex;
+  }
+  .shorted{
+    text-align: center;
+    display: grid;
+    align-items: center;
+    justify-content: stretch;
+    gap: 10px;
+  }
+  .shorted .newLink{
+    width: 70vw;
+    width: 100%;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    border-top: 2px solid hsl(0, 0%, 75%);
+  }
+  .shorted button{
+    margin-left: 0;
+  }
+  header{
+    gap: 0;
+    justify-content: space-between;
+  }
+  header .linksAndLogin{
+    z-index: 100000;
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: 900;
+    transform: translate(-50%);
+    width: 80vw;
+    height: 400px;
+    display: grid;
+    background-color: hsl(257, 27%, 26%);
+  }
+  header .login{
+    margin: 0;
+  }
+  .login span{
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 20px;
+  }
+  header .linksAndLogin>*{
+    gap: 20px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+  .linksAndLogin .login{
+    border-top: 2px solid hsl(0, 0%, 75%);
+  }
+  header img{
+    margin: 0 0 0 30px;
+  }
+  .getStarted{
+    width: 100vw;
+    display: grid;
+    justify-items: center;
+  }
+  .getStarted img{
+    grid-row-start: 1;
+    width: 90vw;
+  }
+  .getStarted .info{
+    text-align: center;
+    width: fit-content;
+    margin:0 30px;
+  }
+  .sticky  form{
+    height: fit-content;
+    grid-template-columns: 100%;
+    margin: 0 auto;
+    align-items: center;
+    padding: 40px 30px;
+    gap: 20px;
+  }
+  .advancedStats{
+    width: 100vw;
+    padding-bottom: 50px;
+  }
+  .advancedStats .fancyComp{
+    margin: 0 30px;
+    display: grid;
+  }
+  .details p{
+    width: 100%;
+  }
+  .sticky{
+    margin-bottom: -100px;
+  }
+  .fancyComp::after{
+    content: '';
+    width: 20px;
+    height: 100%;
+    background-color: hsl(180, 66%, 49%);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  footer{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  footer .footerDetail{
+    display: grid;
+    align-items: center;
+  }
+}
